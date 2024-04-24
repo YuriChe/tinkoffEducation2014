@@ -16,14 +16,14 @@ public class task2 {
         } else {
             throw new IllegalArgumentException("Неверные параметры");
         }
+
         //заполняем матрицу
         for (int i = 0; i < y; i++) {
-            input = scanner.nextLine();
-            String[] tempArray = input.split(" ");
             for (int j = 0; j < x; j++) {
-                matrix[i][j] = Integer.parseInt(tempArray[j]);
+                matrix[i][j] = scanner.nextInt();
             }
         }
+
         //поворот
         int[][] matrixTurn = new int[x][y];
         for (int i = 0; i < x; i++) {
