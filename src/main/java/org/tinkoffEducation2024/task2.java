@@ -28,7 +28,7 @@ public class task2 {
         int[][] matrixTurn = new int[x][y];
         for (int i = 0; i < x; i++) {
             for (int j = 0; j < y; j++) {
-                matrixTurn[i][j] = matrix[y - j - 1][i];
+                matrixTurn[i][j] = matrix[y - 1 - j][i];
             }
         }
 
