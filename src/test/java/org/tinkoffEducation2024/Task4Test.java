@@ -42,10 +42,24 @@ class Task4Test {
     }
 
     @Test
-    public void turnRight() {
+    public void turnRightByLayout() {
         turnRightMatrixByLayout(matrix);
-        /*transpose(matrix);
-        changeLines(matrix);*/
+        switch (sizeMatrix) {
+            case 3: {
+                assertArrayEquals(matrix[2], new long[]{9, 6, 3});
+                break;
+            }
+            case 4: {
+                assertArrayEquals(matrix[3], new long[]{16, 12, 8, 4});
+                break;
+            }
+        }
+    }
+
+    @Test
+    public void turnRight() {
+        transpose(matrix);
+        changeLines(matrix);
         switch (sizeMatrix) {
             case 3: {
                 assertArrayEquals(matrix[2], new long[]{9, 6, 3});
@@ -84,9 +98,23 @@ class Task4Test {
     }
 
     @Test
-    public void turnLeftTest() {
-//        turnLeft(matrix);
+    public void turnLeftByLayoutTest() {
         turnLeftMatrixByLayout(matrix);
+        switch (sizeMatrix) {
+            case 3: {
+                assertArrayEquals(matrix[2], new long[]{1, 4, 7});
+                break;
+            }
+            case 4: {
+                assertArrayEquals(matrix[3], new long[]{1, 5, 9, 13});
+                break;
+            }
+        }
+    }
+
+    @Test
+    public void turnLeftTest() {
+        turnLeft(matrix);
         switch (sizeMatrix) {
             case 3: {
                 assertArrayEquals(matrix[2], new long[]{1, 4, 7});

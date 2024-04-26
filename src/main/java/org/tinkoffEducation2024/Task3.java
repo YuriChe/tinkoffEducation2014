@@ -60,14 +60,13 @@ public class Task3 {
 
     static void printDir(Directory dir, int indent) {
         StringBuilder sb = new StringBuilder();
-        for (int i = 1; i < indent; i++) {
-            sb.append(" ");
-        }
-        //пропуск начала
+        sb.append(" ".repeat(Math.max(0, indent - 1)));
+        //пропуск корня
         if (!dir.name.isEmpty()) {
             sb.append(dir.name);
             System.out.println(sb);
         }
+        //рекурсивно обход дерева
         for (Directory child : dir.subfolder) {
             printDir(child, indent + 1);
         }
