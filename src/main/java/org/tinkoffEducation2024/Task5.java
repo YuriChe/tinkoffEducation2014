@@ -3,6 +3,7 @@ package org.tinkoffEducation2024;
 import java.util.Scanner;
 
 public class Task5 {
+    //// решение неверное. думаю
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

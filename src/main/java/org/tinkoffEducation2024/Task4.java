@@ -71,6 +71,7 @@ public class Task4 {
         }
     }
 
+    //ПРИМЕР метод для транспонирования
     public static void transpose(long[][] matrix) {
         long tmp;
         for (int i = 0; i < sizeMatrix; i++) {
@@ -82,6 +83,7 @@ public class Task4 {
         }
     }
 
+    //ПРИМЕР метод замены строк
     public static void changeLines(long[][] matrix) {
         long tmp;
         for (int i = 0; i < sizeMatrix / 2; i++) {
@@ -93,11 +95,13 @@ public class Task4 {
         }
     }
 
+    //ПРИМЕР метод для повора направо методом транспонирования и замены
     public static void turnRight(long[][] matrix) {
         transpose(matrix);
         changeLines(matrix);
     }
 
+    //ПРИМЕР метод для повора налево методом транспонирования и замены
     public static void turnLeft(long[][] matrix) {
         turnRight(matrix);
         turnRight(matrix);
