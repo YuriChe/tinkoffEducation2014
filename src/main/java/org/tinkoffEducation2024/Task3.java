@@ -2,7 +2,7 @@ package org.tinkoffEducation2024;
 
 import java.util.*;
 
-public class task3 {
+public class Task3 {
 
     static class Directory implements Comparable<Directory> {
         String name;
@@ -81,12 +81,19 @@ public class task3 {
                 "root/a/b/c\n" +
                 "root\n" +
                 "root/c\n";
+        String strTemp1 = "6\n" +
+                "root/n\n" +
+                "root/a/b\n" +
+                "root/a/x\n" +
+                "root/n/c\n" +
+                "root\n" +
+                "root/c\n";
         String strTemp2 = "4\n" +
                 "a/b/c/d\n" +
                 "a/b\n" +
                 "a/b/c\n" +
                 "a\n";
-        Scanner scanner = new Scanner(strTemp2);
+        Scanner scanner = new Scanner(strTemp1);
         int n = scanner.nextInt();
         scanner.nextLine();
         List<String> paths = new ArrayList<>();

@@ -47,7 +47,7 @@
  * <p>
  * В коде я все же реализую поворот матрицы, хоть и на результат это не влияет.
  * Реализованы помимо задачи транспонирование матрицы.
- * Использовал подходящую для этого случая функциональность как классы типа Record {@link org.tinkoffEducation2024.task4.Cell} для хранения координат.
+ * Использовал подходящую для этого случая функциональность как классы типа Record {@link org.tinkoffEducation2024.Task4.Cell} для хранения координат.
  **/
 
 package org.tinkoffEducation2024;
@@ -55,7 +55,7 @@ package org.tinkoffEducation2024;
 import java.util.ArrayDeque;
 import java.util.Scanner;
 
-public class task4 {
+public class Task4 {
 
     enum Direction {
         LEFT,

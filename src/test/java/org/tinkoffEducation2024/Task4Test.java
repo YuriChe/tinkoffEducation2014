@@ -3,13 +3,11 @@ package org.tinkoffEducation2024;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.tinkoffEducation2024.task4.*;
+import static org.tinkoffEducation2024.Task4.*;
 
-class task4Test {
+class Task4Test {
 
     static int sizeMatrix;
     static long[][] matrix;
@@ -18,7 +16,7 @@ class task4Test {
     @BeforeAll
     static void setSize() {
         sizeMatrix = 4; // 4 или 3
-        task4.sizeMatrix = sizeMatrix;
+        Task4.sizeMatrix = sizeMatrix;
     }
 
     @BeforeEach
